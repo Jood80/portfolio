@@ -2,7 +2,7 @@ import { Container, Box, Heading } from '@chakra-ui/react'
 
 const LandingPage = () => (
   <Container>
-    <Box borderRadius="lg" bg="gray" p={3} mb={3} align="center">
+    <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center">
       Hey, I&apos;m a backend engineer based in Palestine
     </Box>
     <Box display={{ md: 'flex' }}>
