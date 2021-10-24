@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import {
   Container,
   Box,
@@ -7,10 +8,10 @@ import {
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const LandingPage = () => (
   <Container>
@@ -71,6 +72,56 @@ const LandingPage = () => (
           </Button>
         </NextLink>
       </Box>
+    </Section>
+
+    <Section delay={0.2}>
+      <Heading as="h3" variant="section-title">
+        Bio
+      </Heading>
+      <BioSection>
+        <BioYear>1995</BioYear>
+        Born in Hebron, Palestine.
+      </BioSection>
+      <BioSection>
+        <BioYear>2013</BioYear>
+        Moved back from Jordan to Palestine
+      </BioSection>
+      <BioSection>
+        <BioYear>2016</BioYear>
+        Joined Erasmus Exchange program at the Fall of Middle East Technical
+        university
+      </BioSection>
+      <BioSection>
+        <BioYear>2018</BioYear>
+        Graduted Mechanical Engineer- Mechatronics at Palestine Polytechnic
+        university
+      </BioSection>
+      <BioSection>
+        <BioYear>2020</BioYear>
+        Joined GazaSkyGeeks CodeAcademy bootcamp
+      </BioSection>
+      <BioSection>
+        <BioYear>2020</BioYear>
+        Had a Frontend internship at Zaat.dev startups
+      </BioSection>
+      <BioSection>
+        <BioYear>2021</BioYear>
+        Had a Backend internship at Kiitos technologies
+      </BioSection>
+      <BioSection>
+        <BioYear>2021</BioYear>
+        Mentored group of students in a React bootcamp-GSG
+      </BioSection>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Love
+        </Heading>
+        <Paragraph>
+          Martial-arts/Kata, Hicking, Drifting, Chess, handCrafting, Robotics,
+          differnital equations.
+        </Paragraph>
+      </Section>
     </Section>
   </Container>
 )
