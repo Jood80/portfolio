@@ -115,7 +115,7 @@ const LandingPage = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Love
+          ❤️
         </Heading>
         <Paragraph>
           Martial-arts/Kata, Hicking, Drifting, Chess, handCrafting, Robotics,
