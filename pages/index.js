@@ -6,9 +6,19 @@ import {
   Image,
   Link,
   Button,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoGithub,
+  IoLogoGoogle,
+  IoLogoLinkedin,
+  IoLogoDiscord
+} from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -129,6 +139,61 @@ const LandingPage = () => (
             differnital equations.
           </Paragraph>
         </Section>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Contact Me
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/Jood80" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                Github
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/nujood-kadhem-4245721b3/"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                Linkedin
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="shawar.nujood@gmail.com" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGoogle />}
+              >
+                Gmail
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://discord.gg/user/Nujood#5153" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoDiscord />}
+              >
+                Discord
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
     </Container>
   </Layout>
