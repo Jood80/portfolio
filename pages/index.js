@@ -8,11 +8,10 @@ import {
   Button,
   List,
   ListItem,
-  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { GridItem } from '../components/grid-item'
+
 import {
   IoLogoGithub,
   IoLogoGoogle,
