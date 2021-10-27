@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, Spinner } from '@chakra-ui/react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
@@ -10,6 +10,7 @@ function easeOutCirc(x) {
 
 const VoxelDog = () => {
   const refContainer = useRef()
+  const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
@@ -65,6 +66,7 @@ const VoxelDog = () => {
         castShadow: false
       }).then(() => {
         animate()
+        setLoading(false)
       })
 
       let req = null
@@ -106,6 +108,16 @@ const VoxelDog = () => {
       h={[280, 480, 640]}
       position="relative"
     >
+      {loading && (
+        <Spinner
+          size="xl"
+          position="absolute"
+          left="50%"
+          top="50%"
+          ml="calc(0px - var(--spinner-size))/2"
+          mt="calc(0px - var(--spinner-size))"
+        />
+      )}
       Doggyyyyy
     </Box>
   )
