@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -9,7 +9,7 @@ const variants = {
     y: 20
   },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 20 }
+  exit: { opacity: 0, x: -0, y: 20 }
 }
 
 const Layout = ({ children, title }) => (
@@ -24,7 +24,7 @@ const Layout = ({ children, title }) => (
     <>
       {title && (
         <Head>
-          <title>{title - `Nujood`}</title>
+          <title>{title} - Nujood</title>
         </Head>
       )}
       {children}

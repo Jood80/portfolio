@@ -1,19 +1,9 @@
 import NextLink from 'next/link'
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Menu,
-  Heading,
-  Flex,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Container, Box, Link, Stack, Flex, Heading } from '@chakra-ui/layout'
+import { Menu, MenuItem, MenuList, MenuButton } from '@chakra-ui/menu'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { IconButton } from '@chakra-ui/button'
+import { useColorModeValue } from '@chakra-ui/color-mode'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 

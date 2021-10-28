@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react'
-import styled from '@emotion/styled'
 import { Heading } from '@chakra-ui/layout'
+import styled from '@emotion/styled'
 import Section from '../section'
 
 export const BioSection = styled(Box)`

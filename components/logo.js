@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/layout'
+import { useColorModeValue } from '@chakra-ui/color-mode'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -11,6 +12,7 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
+  overflow: hidden;
 
   img {
     transition: 200ms ease;

@@ -5,7 +5,6 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
-
 import Layout from '../components/layouts/article'
 import {
   HeroSection,

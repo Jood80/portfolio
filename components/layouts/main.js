@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import Navbar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
+import Navbar from '../navbar'
 import Loader from '../loader'
 import Footer from '../footer'
 
