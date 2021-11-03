@@ -13,10 +13,10 @@ const ThemeToggleButton = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.1 }}
       >
         <IconButton
-          aria-label="Toggle Theme"
+          aria-label="Toggle-mode Theme"
           colorScheme={useColorModeValue('purple', 'orange')}
           icon={useColorModeValue(<SunIcon />, <MoonIcon />)}
           onClick={toggleColorMode}
