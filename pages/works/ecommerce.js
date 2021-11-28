@@ -5,10 +5,10 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="blog">
+  <Layout title="clothing ecommerce">
     <Container>
       <Title>
-        Blog <Badge>2020</Badge>
+        Clothing Ecommerce <Badge>2020</Badge>
       </Title>
       <Paragraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,17 +19,17 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/strapi-blog">
-            {' '}
-            https://github.com/Jood80/strapi-blog <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/Jood80/crwn-clothing">
+            https://github.com/Jood80/crwn-clothing
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJs ,React</span>
+          <span>React, Firebase</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
+      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )
