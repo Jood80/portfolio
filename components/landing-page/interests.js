@@ -8,8 +8,8 @@ const Hoppies = ({ delay }) => (
       ❤️
     </Heading>
     <Paragraph>
-      Martial-arts/Kata, Hicking, Drifting, Chess, handCrafting, Robotics,
-      differnital equations.
+      Distributed Systems, Martial-arts, Hicking, Drifting, Studio Ghibli,
+      Chatting with mother, Robotics, Chess.
     </Paragraph>
   </Section>
 )

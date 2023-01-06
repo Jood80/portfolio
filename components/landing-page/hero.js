@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
-import { Heading, Link, Box, Button } from '@chakra-ui/react'
+import { Heading, Box, Button } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+
 import Section from '../section'
 import Paragraph from '../paragraph'
 
@@ -10,18 +11,11 @@ const HeroSection = ({ delay }) => (
       Work
     </Heading>
     <Paragraph>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industrys standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem Ipsum{' '}
-      <NextLink href="/works/strapi">
-        <Link>bloger</Link>
-      </NextLink>
-      .
+      Hey, I&apos;m a Full Stack developer based in Palestine , an avid learner
+      who enjoys challenging myself when tackling complex technical problems. A
+      Full Stack developer who&apos;s moved with backend engineering and systems
+      architecture to build a scalable websites based on a clean code. I love
+      working on a team and solving problems together. Adventurer at heart.
     </Paragraph>
     <Box align="center" my={7}>
       <NextLink href="/works">

@@ -23,19 +23,24 @@ const LandingPage = () => (
         mb={6}
         align="center"
       >
-        Hey, I&apos;m a backend engineer based in Palestine
+        {' '}
+        &quot; You don&apos;t stop when it&apos;s done, you stop when it&apos;s
+        right.&quot; Uncle Bob
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Nujood Kadhem
           </Heading>
-          <p>Learner (Mechatronics Enginner, Robotics, Developer)</p>
+          <p>
+            Software Developer (Backend Focused, Mechatronics Engineer-Robotics)
+          </p>
         </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
+          mb={{ md: 6 }}
           align="center"
         >
           <Image

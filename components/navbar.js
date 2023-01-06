@@ -13,7 +13,7 @@ const LinkItem = ({ href, path, children }) => {
   return (
     <NextLink href={href} passHref>
       <Link
-        p={2}
+        px={6}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
       >
@@ -55,16 +55,16 @@ const Navbar = props => {
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 2, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
           <NextLink href="https://github.com/jood80" passHref>
             Github
+          </NextLink>
+          <NextLink href="/cv" path={path}>
+            CV
           </NextLink>
         </Stack>
 
@@ -86,12 +86,12 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem as={Link} href="https://github.com/jood80">
+                <MenuItem as={Link} href="https://github.com/jood80" pressHref>
                   Github
                 </MenuItem>
+                <NextLink href="/cv" passHref>
+                  <MenuItem as={Link}>CV</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>
