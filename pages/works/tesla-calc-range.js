@@ -5,10 +5,11 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="pokemon">
-    <Container>
+  <Layout title="Tesla Calculator Range">
+    <Container mt="5em">
+      <WorkImage src="/images/works/tesla.png" alt="tesla" />
       <Title>
-        Pokemon <Badge>2020</Badge>
+        Tesla Calculator Range <Badge>2020</Badge>
       </Title>
       <Paragraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,17 +20,18 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/pokemon">
-            https://github.com/Jood80/pokemon
+          <Link href="https://github.com/Jood80/tesla-range-calculator">
+            {' '}
+            https://github.com/Jood80/tesla-range-calculator |
+            https://tesla-range-calc.surge.sh/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Node, GraphQl</span>
+          <span>NodeJs ,React</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )

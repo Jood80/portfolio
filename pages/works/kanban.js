@@ -6,9 +6,10 @@ import Paragraph from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="todo hooks">
-    <Container>
+    <Container mt="5em">
+      <WorkImage src="/images/works/kanban.png" alt="ca" />
       <Title>
-        ToDo hooks <Badge>2020</Badge>
+        Kanban Board <Badge>2020</Badge>
       </Title>
       <Paragraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,8 +20,8 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/todos_hook">
-            https://github.com/Jood80/todos_hook
+          <Link href="https://kanban-board-c40c0.web.app/">
+            https://kanban-board-c40c0.web.app/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -29,7 +30,6 @@ const Work = () => (
           <span>React, hooks</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )

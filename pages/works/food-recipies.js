@@ -5,10 +5,12 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="next workshop">
-    <Container>
+  <Layout title="to do app">
+    <Container mt="5em">
+      {' '}
+      <WorkImage src="/images/works/ca.png" alt="ca" />
       <Title>
-        Nextjs Workshop <Badge>2020</Badge>
+        To do app <Badge>2020</Badge>
       </Title>
       <Paragraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,18 +21,16 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/GSG-K3/next-js-workshop">
-            {' '}
-            https://github.com/GSG-K3/next-js-workshop{' '}
+          <Link href="https://github.com/Jood80/ionic-angular-recipes">
+            https://github.com/Jood80/ionic-angular-recipes
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Next.js</span>
+          <span>React</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )

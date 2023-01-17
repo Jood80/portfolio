@@ -6,7 +6,8 @@ import Paragraph from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="strapi blog">
-    <Container>
+    <Container mt="5em">
+      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
       <Title>
         Strapi blog <Badge>2020</Badge>
       </Title>
@@ -16,11 +17,14 @@ const Work = () => (
         1500s, when an unknown printer took a galley of type and scrambled it to
         make a type specimen book.
       </Paragraph>
-      <List ml={4} my={4}>
+      <List my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/strapi-blog">
-            {' '}
+          <Meta>Code</Meta>
+          <Link
+            href="https://github.com/Jood80/strapi-blog"
+            target="
+          _blank"
+          >
             https://github.com/Jood80/strapi-blog <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -29,7 +33,6 @@ const Work = () => (
           <span>Strapi ,React</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
     </Container>
   </Layout>
 )

@@ -5,10 +5,10 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="urgency">
+  <Layout title="Nextup Comedy">
     <Container>
       <Title>
-        Urgency <Badge>2020</Badge>
+        Express Typescript BoilerPlate <Badge>2020</Badge>
       </Title>
       <Paragraph>
         As the lockdown and corona-virus begin to subside in New Jersey, this
@@ -21,18 +21,17 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/urgency">
+          <Link href="https://github.com/NextUp-comedy">
             {' '}
-            https://github.com/Jood80/urgency <ExternalLinkIcon mx="2px" />
+            https://github.com/NextUp-comedy <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          NodeJs, Express , postgresql, NodeMailer <br />
-          React, Material-ui, Formik
+          NodeJs, Express , postgresql, NodeMailer
         </ListItem>
       </List>
-      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
+      <WorkImage src="/images/works/nextup-comedy.png" alt="blog" />
     </Container>
   </Layout>
 )

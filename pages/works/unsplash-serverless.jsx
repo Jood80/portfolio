@@ -5,15 +5,13 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="express typescript boilierpalte">
-    <Container>
+  <Layout title="zaat">
+    <Container mt="5em">  <WorkImage src="/images/works/cloudflare.png" alt="blog" />
       <Title>
-        Express Typescript BoilerPlate <Badge>2020</Badge>
+        Unsplash <Badge>2020</Badge>
       </Title>
       <Paragraph>
-        As the lockdown and corona-virus begin to subside in New Jersey, this
-        application designed to help shops re-opening their showroom with half
-        capacity, the main problem comes to have the control over:
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor sit cupiditate saepe, totam ex odit veritatis doloribus illo vel numquam alias corrupti veniam a, animi nihil, magnam minus reprehenderit incidunt debitis? In ipsa a quae, quos iste odio. Consectetur deserunt pariatur magnam quaerat voluptatibus asperiores nostrum! Quam est architecto eveniet ab provident magnam voluptas aspernatur 
         <br />
         • Number of people allowed to be in the showroom at the same time <br />{' '}
         • Number of hours allowed for each visit
@@ -21,18 +19,19 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/express-typescript">
+          <Link href="https://github.com/Jood80/cloudflare-serverless/">
             {' '}
-            https://github.com/Jood80/express-typescript{' '}
+            https://github.com/Jood80/cloudflare-serverless/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          NodeJs, Express , postgresql, NodeMailer
+          NodeJs, Express , postgresql, NodeMailer <br />
+          React, Material-ui, Formik
         </ListItem>
       </List>
-      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
+    
     </Container>
   </Layout>
 )

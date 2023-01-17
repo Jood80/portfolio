@@ -6,7 +6,8 @@ import Paragraph from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="quiz app">
-    <Container>
+    <Container mt="5em">
+      <WorkImage src="/images/works/quiz.png" alt="Quiz" />
       <Title>
         Quiz App <Badge>2020</Badge>
       </Title>
@@ -29,7 +30,6 @@ const Work = () => (
           <span>React</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )

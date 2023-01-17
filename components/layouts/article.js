@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { GridItemStyle } from '../grid-item'
+import { Box } from '@chakra-ui/react'
 
 const variants = {
   hidden: {
@@ -21,7 +22,7 @@ const Layout = ({ children, title }) => (
     transition={{ duration: 0.4, type: 'easeInOut' }}
     style={{ position: 'relative' }}
   >
-    <>
+    <Box maxW="container.lg">
       {title && (
         <Head>
           <title>{title} - Nujood</title>
@@ -29,7 +30,7 @@ const Layout = ({ children, title }) => (
       )}
       {children}
       <GridItemStyle />
-    </>
+    </Box>
   </motion.article>
 )
 

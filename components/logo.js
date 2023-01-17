@@ -11,7 +11,7 @@ const LogoBox = styled.span`
   align-items: center;
   height: 30px;
   line-height: 20px;
-  padding: 10px;
+  padding-right: 30px;
   margin-button: 2em;
   overflow: hidden;
 

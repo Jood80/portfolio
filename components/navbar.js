@@ -16,6 +16,7 @@ const LinkItem = ({ href, path, children }) => {
         px={6}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
+        borderRadius={active ? '3px' : undefined}
       >
         {children}
       </Link>
@@ -33,7 +34,6 @@ const Navbar = props => {
       bg={useColorModeValue('#ffffff40', '#20202380')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
-      {...props}
     >
       <Container
         display="flex"
@@ -54,18 +54,22 @@ const Navbar = props => {
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
-          flexGrow={1}
-          mt={{ base: 2, md: 0 }}
+          flexGrow={2}
+          mt={{ base: 2, md: 2 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Work
           </LinkItem>
-          <NextLink href="https://github.com/jood80" passHref>
-            Github
-          </NextLink>
-          <NextLink href="/cv" path={path}>
+          <LinkItem href="/cv" path={path}>
             CV
-          </NextLink>
+          </LinkItem>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/jood80"
+          >
+            Github
+          </a>
         </Stack>
 
         {/* Mobile Menu */}
@@ -80,18 +84,18 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <NextLink href="/">
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/works">
+                  <MenuItem as={Link}>Work</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/jood80" pressHref>
-                  Github
-                </MenuItem>
-                <NextLink href="/cv" passHref>
+                <NextLink href="/cv">
                   <MenuItem as={Link}>CV</MenuItem>
                 </NextLink>
+                <MenuItem as={Link} href="https://github.com/jood80">
+                  Github
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

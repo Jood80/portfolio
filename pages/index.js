@@ -24,7 +24,7 @@ const LandingPage = () => (
         align="center"
       >
         {' '}
-        &quot; You don&apos;t stop when it&apos;s done, you stop when it&apos;s
+        &quot;You don&apos;t stop when it&apos;s done, you stop when it&apos;s
         right.&quot; Uncle Bob
       </Box>
       <Box display={{ md: 'flex' }}>

@@ -5,10 +5,11 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="code academy applicaton">
-    <Container>
+  <Layout title="Node GraphQL Boilerplate">
+    <Container mt="5em">
+      <WorkImage src="/images/works/ca.png" alt="ca" />
       <Title>
-        Code Academy Application <Badge>2020</Badge>
+        Lectura <Badge>2020</Badge>
       </Title>
       <Paragraph>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,18 +20,16 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/GSG-K3/ca-application-website">
-            {' '}
-            https://github.com/GSG-K3/ca-application-website/tree/dev{' '}
+          <Link href="https://github.com/Jood80/node-ts-graphQl-boilerplate">
+            https://github.com/Jood80/node-ts-graphQl-boilerplate
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJs ,React</span>
+          <span>Node.js, GraphQl, Typescript</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/ca.png" alt="ca" />
     </Container>
   </Layout>
 )
