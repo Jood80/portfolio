@@ -18,7 +18,7 @@ const HeroSection = ({ delay }) => (
       working on a team and solving problems together. Adventurer at heart.
     </Paragraph>
     <Box align="center" my={7}>
-      <NextLink href="/works">
+      <NextLink href="/work">
         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
           My portfolio
         </Button>

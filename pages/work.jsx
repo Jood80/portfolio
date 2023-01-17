@@ -5,19 +5,19 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { GridItem, WorkGridItem } from '../components/grid-item'
 
-import myTindyLogo from '/public/images/works/mytindy.webp'
+import myTindyLogo from '/public/images/works/mytindy.png'
 import ccp from '/public/images/ccp.png'
 import { collaborations, personalProjects } from '../lib/constants'
 
 
 
-const Works = () => {
+const Work = () => {
   return (
-    <Layout title="works">
+    <Layout title="work">
       
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Works
+          Work
         </Heading>
 
         <SimpleGrid columns={[1, 1, 4]} gap={6}>
@@ -85,4 +85,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default Work

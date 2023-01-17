@@ -53,7 +53,7 @@ const Work = () => (
   <>
     <Layout title="MyTindy">
       <Container mt="6em">
-        <WorkImage src="/images/works/mytindy.webp" alt="ca" />
+        <WorkImage src="/images/works/mytindy.png" alt="ca" />
         <Title>
           MyTindy<Badge>2022</Badge>
         </Title>
