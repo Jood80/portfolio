@@ -7,18 +7,20 @@ import Paragraph from '../../components/paragraph'
 const Work = () => (
   <Layout title="strapi blog">
     <Container mt="5em">
-      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
       <Title>
-        Strapi blog <Badge>2020</Badge>
+        Blog <Badge>AUG-2021</Badge>
       </Title>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+        The site meant to display blogs for you that&apos;s been added via
+        Strapi CMS beforehand, you can filter them based on their category or
+        all in one place.
       </Paragraph>
       <List my={4}>
         <ListItem>
+          <ListItem>
+            <Meta>Stack</Meta>
+            <span>React, Strapi, GraphQL, Docker.</span>
+          </ListItem>
           <Meta>Code</Meta>
           <Link
             href="https://github.com/Jood80/strapi-blog"
@@ -28,11 +30,8 @@ const Work = () => (
             https://github.com/Jood80/strapi-blog <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-        <ListItem>
-          <Meta>Stack</Meta>
-          <span>Strapi ,React</span>
-        </ListItem>
       </List>
+      <WorkImage src="/images/works/strapiBlog.png" alt="blog" />
     </Container>
   </Layout>
 )

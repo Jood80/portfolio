@@ -7,29 +7,37 @@ import Paragraph from '../../components/paragraph'
 const Work = () => (
   <Layout title="kitten rolodex">
     <Container mt="5em">
-      <WorkImage src="/images/works/kittens.png" alt="ca" />
       <Title>
-        Kitten Rolodex <Badge>2020</Badge>
+        Kitten Rolodex <Badge>AUG-2020</Badge>
       </Title>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+        One of the early stage learning projects, the site can display you bunch
+        of weird kittens -who seem to be innocent- as animated cards.
       </Paragraph>
-      <List ml={4} my={4}>
+      <List my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/kittens-rolodex">
+          <Meta>STACK</Meta>
+          <span>React, Axios</span>
+        </ListItem>
+        <ListItem>
+          <Meta>CODE</Meta>
+          <Link
+            href="https://github.com/Jood80/kittens-rolodex"
+            target="_blank"
+          >
             https://github.com/Jood80/kittens-rolodex
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>React, Axios</span>
+          <Meta>WEBSITE</Meta>
+          <Link href="https://kittens-rolodex.vercel.app/" target="_blank">
+            kittens-rolodex.vercel.app/
+            <ExternalLinkIcon mx="2px" />
+          </Link>
         </ListItem>
       </List>
+      <WorkImage src="/images/works/kittens.png" alt="ca" />
     </Container>
   </Layout>
 )

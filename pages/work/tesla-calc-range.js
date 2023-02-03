@@ -7,31 +7,41 @@ import Paragraph from '../../components/paragraph'
 const Work = () => (
   <Layout title="Tesla Calculator Range">
     <Container mt="5em">
-      <WorkImage src="/images/works/tesla.png" alt="tesla" />
       <Title>
-        Tesla Calculator Range <Badge>2020</Badge>
+        Tesla Calculator Range <Badge>JUL-2022</Badge>
       </Title>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
+        For Tesla users or you Ms/Mr reader who may/may not want to buy one in
+        the future. Here is a calculator that can check Tesla’s battery range
+        for you, based on number of factors: temperature, the car&apos;s speed
+        and its wheels size.
       </Paragraph>
-      <List ml={4} my={4}>
+      <List my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://github.com/Jood80/tesla-range-calculator">
+          <Meta>Stack</Meta>
+          <span>React, Redux.</span>
+        </ListItem>
+        <ListItem>
+          <Meta>CODE</Meta>
+          <Link
+            href="https://github.com/Jood80/tesla-range-calculator"
+            target="_blank"
+          >
             {' '}
-            https://github.com/Jood80/tesla-range-calculator |
-            https://tesla-range-calc.surge.sh/
+            https://github.com/Jood80/tesla-range-calculator
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>NodeJs ,React</span>
+          <Meta>Website</Meta>
+          <Link href="https://tesla-range-calc.surge.sh/" target="_blank">
+            {' '}
+            https://tesla-range-calc.surge.sh/
+            <ExternalLinkIcon mx="2px" />
+          </Link>
         </ListItem>
       </List>
+      <WorkImage src="/images/works/tesla.png" alt="tesla" />
     </Container>
   </Layout>
 )

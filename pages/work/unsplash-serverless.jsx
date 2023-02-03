@@ -6,19 +6,19 @@ import Paragraph from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="zaat">
-    <Container mt="5em">  <WorkImage src="/images/works/cloudflare.png" alt="blog" />
+    <Container mt="5em"> 
       <Title>
-        Unsplash <Badge>2020</Badge>
+        Unsplash <Badge>2022</Badge>
       </Title>
       <Paragraph>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor sit cupiditate saepe, totam ex odit veritatis doloribus illo vel numquam alias corrupti veniam a, animi nihil, magnam minus reprehenderit incidunt debitis? In ipsa a quae, quos iste odio. Consectetur deserunt pariatur magnam quaerat voluptatibus asperiores nostrum! Quam est architecto eveniet ab provident magnam voluptas aspernatur 
-        <br />
-        • Number of people allowed to be in the showroom at the same time <br />{' '}
-        • Number of hours allowed for each visit
+        Serverless cloudflare workers has been used to fetch the users some pictures based on their search input.
       </Paragraph>
-      <List ml={4} my={4}>
+      <List my={4}>
         <ListItem>
-          <Meta>Website</Meta>
+          <Meta>Stack</Meta>
+          React, Express, cloudflare</ListItem>
+        <ListItem>
+          <Meta>CODE</Meta>
           <Link href="https://github.com/Jood80/cloudflare-serverless/">
             {' '}
             https://github.com/Jood80/cloudflare-serverless/
@@ -26,11 +26,15 @@ const Work = () => (
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          NodeJs, Express , postgresql, NodeMailer <br />
-          React, Material-ui, Formik
+          <Meta>WEBSITE</Meta>
+          <Link href="https://2be32bf9.cloudflare-serverless-6qh.pages.dev/">
+                    https://2be32bf9.cloudflare-serverless-6qh.pages.dev/
+            <ExternalLinkIcon mx="2px" />
+          </Link>
         </ListItem>
+        
       </List>
+     <WorkImage src="/images/works/cloudflare.png" alt="blog" />
     
     </Container>
   </Layout>
