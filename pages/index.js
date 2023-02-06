@@ -12,6 +12,7 @@ import {
   Hoppies,
   ContantInfo
 } from '../components/landing-page'
+// import { FindME } from '../components/find-me'
 
 const LandingPage = () => (
   <Layout>
@@ -61,6 +62,7 @@ const LandingPage = () => (
       <BioTimeline delay={0.2} />
       <Hoppies delay={0.3} />
       <ContantInfo delay={0.4} />
+      {/* <FindME delay={0.5} /> */}
     </Container>
   </Layout>
 )

@@ -1,4 +1,4 @@
-import { Heading, Link, Button } from '@chakra-ui/react'
+import { Heading, Link, Button, Box } from '@chakra-ui/react'
 import Section from '../section'
 import { socialMedia } from '../../lib/constants'
 
@@ -8,11 +8,12 @@ const ContantInfo = ({ delay }) => (
       Find Me
     </Heading>
     {socialMedia.map(channel => (
+      // <Box className="contact-me" _hover="hover-contact-me" key={channel.name}>
       <Link
         href={channel.link}
         target="_blank"
-        key={channel.name}
         rel="noreferrer"
+        key={channel.name}
       >
         <Button
           variant="ghost"
@@ -20,6 +21,7 @@ const ContantInfo = ({ delay }) => (
           leftIcon={<channel.icon size={23} />}
         />
       </Link>
+      // </Box>
     ))}
   </Section>
 )

@@ -1,34 +1,53 @@
 import React from 'react'
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  Divider,
+  Grid,
+  GridItem as GridItemChakra,
+  Image
+} from '@chakra-ui/react'
 
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-import { GridItem, WorkGridItem } from '../components/grid-item'
+import {
+  GridItem,
+  MyTindyGrid,
+  PhoneItem,
+  WorkGridItem
+} from '../components/grid-item'
+import myTindyLogo from '../public/images/works/mytindy.png'
 
-import myTindyLogo from '/public/images/works/mytindy.png'
+
 import ccp from '/public/images/ccp.png'
 import { collaborations, personalProjects } from '../lib/constants'
-
-
 
 const Work = () => {
   return (
     <Layout title="work">
-      
-      <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+      <Container maxW="container.md">
+        <Heading as="h3" fontSize={20} mb={4} ml={4}>
           Work
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 4]} gap={6}>
+        <SimpleGrid columns={[1, 1, 3]} gap={1}>
           {React.Children.toArray(
             personalProjects.map(({ id, title, thumbnail }) => (
               <Section>
-                <WorkGridItem
-                  id={id}
-                  title={title}
-                  thumbnail={thumbnail}
-                ></WorkGridItem>
+                {!['recipes', 'spaceX'].includes(id) ? (
+                  <WorkGridItem
+                    id={id}
+                    title={title}
+                    thumbnail={thumbnail}
+                  ></WorkGridItem>
+                ) : (
+                  <PhoneItem
+                    id={id}
+                    title={title}
+                    thumbnail={thumbnail}
+                  ></PhoneItem>
+                )}
               </Section>
             ))
           )}
@@ -36,32 +55,49 @@ const Work = () => {
 
         <Section delay={0.2}>
           <Divider my={6} />
-          <Heading as="h3" fontSize={20} mb={4}>
+          <Heading as="h3" fontSize={20} mb={4} ml={6}>
             Collaborations
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          {collaborations.map(({ href, title, thumbnail, description }) => {
-            return (
-              <Section key={href} delay={0.3}>
-                <GridItem href={href} title={title} thumbnail={thumbnail}>
+        <Section delay={0.3}>
+          <SimpleGrid columns={[1, 1, 3]} gap={2}>
+            {collaborations.map(({ href, title, thumbnail, description }) => {
+              return (
+                <GridItem
+                  key={href}
+                  href={href}
+                  title={title}
+                  thumbnail={thumbnail}
+                >
                   {description}
                 </GridItem>
-              </Section>
-            )
-          })}
-        </SimpleGrid>
+              )
+            })}
+        
+              <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy">
+                
+              </MyTindyGrid>
+            </SimpleGrid> 
+          {/* </SimpleGrid>
 
-        <Section delay={0.4}>
-          <WorkGridItem
-            id="mytindy"
-            thumbnail={myTindyLogo}
-            title="MyTindy"
+          {/* <Grid
+            h="400px"
+            templateRows="repeat(2, 1fr)"
+            templateColumns="repeat(5, 1fr)"
+            gap={4}
           >
-            empower sellers with lower levels of literacy to list their products
-            autonomously so they can sell through our platform
-          </WorkGridItem>
+            <GridItemChakra rowSpan={2} colSpan={1} bg="tomato" />
+            <GridItemChakra colSpan={2} bg="papayawhip" />
+            <GridItemChakra colSpan={2} bg="papayawhip" />
+
+              {/* <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy"/> */}
+            {/* <GridItemChakra colSpan={4} bg="tomato">
+              <Image src="/images/works/mytindy.png" alt="cssss" placeholder='blur' />
+              
+            </GridItemChakra>
+
+          </Grid> */} 
         </Section>
 
         <Section delay={0.4}>
@@ -71,7 +107,7 @@ const Work = () => {
             Certificates
           </Heading>
         </Section>
-        <SimpleGrid columns={[1, 1, 1]}>
+        <SimpleGrid columns={[1, 1, 2]}>
           <Section>
             <GridItem
               href="https://drive.google.com/file/d/1UAFbQju05xU2iPrkIzSeYEOzy4ulQ39D/view?usp=sharing"

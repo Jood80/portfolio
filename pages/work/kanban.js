@@ -37,19 +37,19 @@ const Work = () => (
           <span>Angular, Firebase, Angular-material</span>
         </ListItem>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://kanban-board-c40c0.web.app/">
-            https://kanban-board-c40c0.web.app/
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-        <ListItem>
           <Meta>CODE</Meta>
           <Link
             href="https://github.com/Jood80/kanban-board/tree/master"
             target="_blank"
           >
             https://github.com/Jood80/kanban-board
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Website</Meta>
+          <Link href="https://kanban-board-c40c0.web.app/">
+            https://kanban-board-c40c0.web.app/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

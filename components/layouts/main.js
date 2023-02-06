@@ -10,7 +10,8 @@ const LazyDog = dynamic(() => import('../voxel-dog'), {
   loading: () => <Loader />
 })
 
-const withLazyDogPages = new Set(['/', '/work', '/404'])
+// const withLazyDogPages = new Set(['/', '/work', '/404'])
+const withoutdog = new Set(['/cv'])
 
 const Main = ({ children, router }) => {
   return (
@@ -21,7 +22,7 @@ const Main = ({ children, router }) => {
       </Head>
       <Navbar path={router.asPath} />
       <Container maxW="container.lg" pt={2}>
-        {withLazyDogPages.has(router.pathname) && <LazyDog />}
+        {!withoutdog.has(router.pathname) && <LazyDog />}
         {children}
       </Container>
       <Footer />

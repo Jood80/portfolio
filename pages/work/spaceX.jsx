@@ -14,12 +14,12 @@ import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="gatsby blog">
+  <Layout title="SpaceX">
     <Container mt="5em">
       <Title>
         SpaceX Launch <Badge>2020</Badge>
       </Title>
-      <SimpleGrid columns={2} spacing={19}>
+      <SimpleGrid columns={[1, 1, 2]} spacing={19}>
         <Box>
           <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
