@@ -6,7 +6,8 @@ import {
   Divider,
   Grid,
   GridItem as GridItemChakra,
-  Image
+  Image,
+  Box
 } from '@chakra-ui/react'
 
 import Section from '../components/section'
@@ -107,13 +108,16 @@ const Work = () => {
             Certificates
           </Heading>
         </Section>
-        <SimpleGrid columns={[1, 1, 2]}>
+        <SimpleGrid columns={[1, 1, 3]} >
           <Section>
+            <Box m={0}>
+
             <GridItem
               href="https://drive.google.com/file/d/1UAFbQju05xU2iPrkIzSeYEOzy4ulQ39D/view?usp=sharing"
               title="AWS Cloud Practitioner Certificate"
               thumbnail={ccp}
-            ></GridItem>
+              ></GridItem>
+              </Box>
           </Section>
         </SimpleGrid>
       </Container>
