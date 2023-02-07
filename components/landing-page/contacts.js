@@ -1,4 +1,4 @@
-import { Heading, Link, Button, Box } from '@chakra-ui/react'
+import { Heading, Link, Button } from '@chakra-ui/react'
 import Section from '../section'
 import { socialMedia } from '../../lib/constants'
 

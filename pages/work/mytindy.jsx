@@ -4,11 +4,9 @@ import {
   Link,
   List,
   ListItem,
-  SimpleGrid,
-  Box
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta, WorkImage } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 import { Global, css } from '@emotion/react'

@@ -1,6 +1,6 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
@@ -27,7 +27,6 @@ const Work = () => (
         <ListItem>
           <Meta>CODE</Meta>
           <Link href="https://github.com/Jood80/bloggy/tree/dev">
-            {' '}
             https://github.com/Jood80/tweety
             <ExternalLinkIcon mx="2px" />
           </Link>
@@ -39,6 +38,7 @@ const Work = () => (
         muted
         poster="/images/works/mytindy-preview.png"
         style={{ width: '500px' }}
+        // eslint-disable-next-line react/no-unknown-property
         autopictureinpicture="true"
         preload="none"
         controlsList="picture-in-picture"

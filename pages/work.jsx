@@ -4,9 +4,6 @@ import {
   Heading,
   SimpleGrid,
   Divider,
-  Grid,
-  GridItem as GridItemChakra,
-  Image,
   Box
 } from '@chakra-ui/react'
 
@@ -18,11 +15,13 @@ import {
   PhoneItem,
   WorkGridItem
 } from '../components/grid-item'
-import myTindyLogo from '../public/images/works/mytindy.png'
-
 
 import ccp from '/public/images/ccp.png'
-import { collaborations, personalProjects } from '../lib/constants'
+// import myTindyLogo from '../public/images/works/mytindy.png'
+import {collaborations, personalProjects} from '../lib/constants'
+// console.log("myTindyLogo", myTindyLogo);
+
+// const blurDataURL= "/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fworks%2Fmytindy.c36d9c27c49b102b1bffed391cc34438.png&w=8&q=70"
 
 const Work = () => {
   return (
@@ -76,7 +75,7 @@ const Work = () => {
               )
             })}
         
-              <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy">
+              <MyTindyGrid id="mytindy" thumbnail='/images/works/mytindy.png' title="MyTindy">
                 
               </MyTindyGrid>
             </SimpleGrid> 
