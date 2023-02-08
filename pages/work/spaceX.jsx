@@ -22,10 +22,7 @@ const Work = () => (
       <SimpleGrid columns={[1, 1, 2]} spacing={19}>
         <Box>
           <Paragraph>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            A mobile app fetches all the rockets that SpaceX launched so far and displays them for you in cards in which you can read more about each launch in its own page.  
           </Paragraph>
           <List my={4}>
             <ListItem>
