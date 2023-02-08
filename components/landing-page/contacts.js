@@ -14,11 +14,13 @@ const ContantInfo = ({ delay }) => (
         target="_blank"
         rel="noreferrer"
         key={channel.name}
+        aria-label={channel.name}
       >
         <Button
           variant="ghost"
           colorScheme="teal"
           leftIcon={<channel.icon size={23} />}
+          aria-label={channel.name}
         />
       </Link>
       // </Box>

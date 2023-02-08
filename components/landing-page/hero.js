@@ -19,7 +19,11 @@ const HeroSection = ({ delay }) => (
     </Paragraph>
     <Box align="center" my={7}>
       <NextLink href="/work">
-        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+        <Button
+          rightIcon={<ChevronRightIcon />}
+          colorScheme="teal"
+          aria-label="hevronRightIcon"
+        >
           My portfolio
         </Button>
       </NextLink>
