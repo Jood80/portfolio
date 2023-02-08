@@ -17,7 +17,7 @@ import {
 } from '../components/grid-item'
 
 import ccp from '/public/images/ccp.png'
-// import myTindyLogo from '../public/images/works/mytindy.png'
+import myTindyLogo from '../public/images/works/mytindy.png'
 import {collaborations, personalProjects} from '../lib/constants'
 // console.log("myTindyLogo", myTindyLogo);
 
@@ -75,7 +75,7 @@ const Work = () => {
               )
             })}
         
-              <MyTindyGrid id="mytindy" thumbnail='/images/works/mytindy.png' title="MyTindy">
+              <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy">
                 
               </MyTindyGrid>
             </SimpleGrid> 

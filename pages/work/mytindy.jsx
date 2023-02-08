@@ -85,9 +85,6 @@ const Work = () => (
             </ListItem>
           </List>
 
-
-        {/* <WorkImage src="/images/works/mytindy.png" alt="ca" /> */}
-
         <Smartphone>
           <Content>
             <div
