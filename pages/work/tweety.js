@@ -1,8 +1,8 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
-import Layout from '../../components/layouts/article'
-import Paragraph from '../../components/paragraph'
+import { Title, Meta } from '/components/work'
+import Layout from '/components/layouts/article'
+import Paragraph from '/components/paragraph'
 
 const Work = () => (
   <Layout title="code academy application">

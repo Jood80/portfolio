@@ -9,9 +9,9 @@ import {
   Box
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
-import Layout from '../../components/layouts/article'
-import Paragraph from '../../components/paragraph'
+import { Title, Meta } from '/components/work'
+import Layout from '/components/layouts/article'
+import Paragraph from '/components/paragraph'
 
 const Work = () => (
   <Layout title="SpaceX">
@@ -22,7 +22,9 @@ const Work = () => (
       <SimpleGrid columns={[1, 1, 2]} spacing={19}>
         <Box>
           <Paragraph>
-            A mobile app fetches all the rockets that SpaceX launched so far and displays them for you in cards in which you can read more about each launch in its own page.  
+            A mobile app fetches all the rockets that SpaceX launched so far and
+            displays them for you in cards in which you can read more about each
+            launch in its own page.
           </Paragraph>
           <List my={4}>
             <ListItem>

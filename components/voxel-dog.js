@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { loadGLTFModel } from '../lib/model'
+import { loadGLTFModel } from '/lib/model'
 import { DogContainer, DogLoader } from './loader'
 
 function easeOutCirc(x) {

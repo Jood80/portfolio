@@ -1,27 +1,23 @@
 import React from 'react'
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Divider,
-  Box
-} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, Box } from '@chakra-ui/react'
 
-import Section from '../components/section'
-import Layout from '../components/layouts/article'
+import Section from '/components/section'
+import Layout from '/components/layouts/article'
 import {
   GridItem,
   MyTindyGrid,
   PhoneItem,
   WorkGridItem
-} from '../components/grid-item'
+} from '/components/grid-item'
 
 import ccp from '/public/images/ccp.png'
-import myTindyLogo from '../public/images/works/mytindy.png'
-import {collaborations, personalProjects} from '../lib/constants'
-// console.log("myTindyLogo", myTindyLogo);
+import myTindyLogo from '/public/images/works/mytindy.png'
+import { collaborations, personalProjects } from '/constants'
+// import dynamic from 'next/dynamic'
 
-// const blurDataURL= "/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fimages%2Fworks%2Fmytindy.c36d9c27c49b102b1bffed391cc34438.png&w=8&q=70"
+// const DynamicGridItem = dynamic(() => import('../components/grid-item'), {
+//   ssr: false,
+// })
 
 const Work = () => {
   return (
@@ -74,30 +70,13 @@ const Work = () => {
                 </GridItem>
               )
             })}
-        
-              <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy">
-                
-              </MyTindyGrid>
-            </SimpleGrid> 
-          {/* </SimpleGrid>
 
-          {/* <Grid
-            h="400px"
-            templateRows="repeat(2, 1fr)"
-            templateColumns="repeat(5, 1fr)"
-            gap={4}
-          >
-            <GridItemChakra rowSpan={2} colSpan={1} bg="tomato" />
-            <GridItemChakra colSpan={2} bg="papayawhip" />
-            <GridItemChakra colSpan={2} bg="papayawhip" />
-
-              {/* <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy"/> */}
-            {/* <GridItemChakra colSpan={4} bg="tomato">
-              <Image src="/images/works/mytindy.png" alt="cssss" placeholder='blur' />
-              
-            </GridItemChakra>
-
-          </Grid> */} 
+            <MyTindyGrid
+              id="mytindy"
+              thumbnail={myTindyLogo}
+              title="MyTindy"
+            ></MyTindyGrid>
+          </SimpleGrid>
         </Section>
 
         <Section delay={0.4}>
@@ -107,16 +86,15 @@ const Work = () => {
             Certificates
           </Heading>
         </Section>
-        <SimpleGrid columns={[1, 1, 3]} >
+        <SimpleGrid columns={[1, 1, 3]}>
           <Section>
             <Box m={0}>
-
-            <GridItem
-              href="https://drive.google.com/file/d/1UAFbQju05xU2iPrkIzSeYEOzy4ulQ39D/view?usp=sharing"
-              title="AWS Cloud Practitioner Certificate"
-              thumbnail={ccp}
+              <GridItem
+                href="https://drive.google.com/file/d/1UAFbQju05xU2iPrkIzSeYEOzy4ulQ39D/view?usp=sharing"
+                title="AWS Cloud Practitioner Certificate"
+                thumbnail={ccp}
               ></GridItem>
-              </Box>
+            </Box>
           </Section>
         </SimpleGrid>
       </Container>

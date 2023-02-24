@@ -8,7 +8,7 @@ import Paragraph from '../paragraph'
 const HeroSection = ({ delay }) => (
   <Section delay={delay}>
     <Heading as="h3" variant="section-title">
-      Work
+      About
     </Heading>
     <Paragraph>
       Hey, I&apos;m a Full Stack developer based in Palestine , an avid learner

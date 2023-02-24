@@ -1,14 +1,8 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
-import Layout from '../../components/layouts/article'
-import Paragraph from '../../components/paragraph'
+import { Title, Meta } from '/components/work'
+import Layout from '/components/layouts/article'
+import Paragraph from '/components/paragraph'
 import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
@@ -62,59 +56,55 @@ const Work = () => (
         MyTindy<Badge>JUNE-2022</Badge>
       </Title>
 
-          <Paragraph>
-            Create an app to empower sellers with lower levels of literacy to
-            list their products autonomously so they can sell through our
-            platform. This app will be connected to our marketplace and will
-            sync their products on our platform.
-          </Paragraph>
-          <List my={4}>
-            <ListItem>
-              <Meta>Stack</Meta>
-              <span>Angular, Firebase, Ionic , Capacitor </span>
-            </ListItem>
-            <ListItem>
-              <Meta>CODE</Meta>
-              <Link
-                href="https://github.com/MyTindy/mytindy-app"
-                target="_blank"
-              >
-                 mytindy-app
-                <ExternalLinkIcon mx="2px" />
-              </Link>
-            </ListItem>
-          </List>
+      <Paragraph>
+        Create an app to empower sellers with lower levels of literacy to list
+        their products autonomously so they can sell through our platform. This
+        app will be connected to our marketplace and will sync their products on
+        our platform.
+      </Paragraph>
+      <List my={4}>
+        <ListItem>
+          <Meta>Stack</Meta>
+          <span>Angular, Firebase, Ionic , Capacitor </span>
+        </ListItem>
+        <ListItem>
+          <Meta>CODE</Meta>
+          <Link href="https://github.com/MyTindy/mytindy-app" target="_blank">
+            mytindy-app
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+      </List>
 
-        <Smartphone>
-          <Content>
-            <div
+      <Smartphone>
+        <Content>
+          <div
+            style={{
+              width: '100%',
+              height: '0px',
+              position: 'relative',
+              paddingBottom: '214.286%'
+            }}
+          >
+            <iframe
+              src="https://player.vimeo.com/video/794086458?h=815af600e9"
+              width="100%"
+              height="100%"
+              allowFullScreen
               style={{
+                border: 0,
                 width: '100%',
-                height: '0px',
-                position: 'relative',
-                paddingBottom: '214.286%'
+                height: '100%',
+                position: 'absolute',
+                left: '0px',
+                top: '0px',
+                bottom: '0px',
+                overflow: 'hidden'
               }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/794086458?h=815af600e9"
-                width="100%"
-                height="100%"
-                allowFullScreen
-                style={{
-                  border: 0,
-                  width: '100%',
-                  height: '100%',
-                  position: 'absolute',
-                  left: '0px',
-                  top: '0px',
-                  bottom: '0px',
-                  overflow: 'hidden'
-                }}
-              ></iframe>
-            </div>
-          </Content>
-        </Smartphone>
-  
+            ></iframe>
+          </div>
+        </Content>
+      </Smartphone>
     </Container>
   </Layout>
 )

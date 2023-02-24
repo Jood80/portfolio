@@ -1,6 +1,6 @@
 import { Heading, Link, Button } from '@chakra-ui/react'
 import Section from '../section'
-import { socialMedia } from '../../constants'
+import { socialMedia } from '/constants'
 
 const ContantInfo = ({ delay }) => (
   <Section delay={delay}>
@@ -8,7 +8,6 @@ const ContantInfo = ({ delay }) => (
       Find Me
     </Heading>
     {socialMedia.map(channel => (
-      // <Box className="contact-me" _hover="hover-contact-me" key={channel.name}>
       <Link
         href={channel.link}
         target="_blank"

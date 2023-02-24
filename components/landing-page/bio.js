@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/layout'
 import styled from '@emotion/styled'
 import Section from '../section'
-import { timeline } from '../../constants'
+import { timeline } from '/constants'
 
 export const BioSection = styled(Box)`
   padding-left: 3.4em;
