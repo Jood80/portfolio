@@ -1,6 +1,6 @@
 import { Heading, Link, Button } from '@chakra-ui/react'
 import Section from '../section'
-import { socialMedia } from '../../lib/constants'
+import { socialMedia } from '../../constants'
 
 const ContantInfo = ({ delay }) => (
   <Section delay={delay}>
