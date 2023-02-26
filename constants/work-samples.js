@@ -14,35 +14,118 @@ import nextupLogo from '/public/images/works/nextup-logo.png'
 import lectura from '/public/images/works/lectura.png'
 import urban from '/public/images/works/urban2.png'
 import next from '../public/images/works/next.png'
+import myTindyLogo from '/public/images/works/mytindy.png'
 
 export const personalProjects = [
-  { id: 'kanban', title: 'Kanban board', thumbnail: kanban },
-  { id: 'tweety', title: 'Tweety', thumbnail: blog },
-  { id: 'blog', title: 'Blog', thumbnail: strapiBlog },
+  {
+    id: 'kanban',
+    title: 'Kanban Board',
+    thumbnail: kanban,
+    date: 'Feb-2022',
+    description:
+      'Kanban is an interactive board and an authenticated personal board of yours so no none will stalk your progress-it&apos;s not like anyone cares really-, but you&apos;ll have your own account and you can sign out any time you want.in which you can:',
+    list: [
+      'combine a group of tasks together',
+      'drag and drop them',
+      'add new tasks and modify them, and remove them',
+      'change their priority order and color',
+      'dash them if you&apos;ve successfull finish'
+    ],
+    stack: ['Angular, Firebase, Angular-material'],
+    repo: 'https://github.com/Jood80/kanban-board',
+    website: 'https://kanban-board-c40c0.web.app/'
+  },
+  {
+    id: 'tweety',
+    title: 'Tweety',
+    thumbnail: blog,
+    date: 'Jan-2022',
+    description:
+      'With Tweety you can create an account to tweet your thoughts on public and see others&apos; tweets as well. If you forgot your password, you can reset it and an email will be sent back to your account to set a new password.',
+
+    stack: [
+      'React.js, Chakra UI, Context API',
+      'Node.js, Sequelize, PostgreSQL, Firebase for Auth/Emailing'
+    ],
+    repo: 'https://github.com/Jood80/bloggy/tree/dev',
+    displayRepo: 'https://github.com/Jood80/tweety',
+    video: {
+      poster: '/images/works/tweety-preview.png',
+      src: '/videos/tweety.mp4'
+    }
+  },
+  {
+    id: 'blog',
+    title: 'Blog',
+    thumbnail: strapiBlog,
+    date: 'AUG-2021',
+    description:
+      'The site meant to display blogs for you that&apos;s been added via Strapi CMS beforehand, you can filter them based on their category or all in one place.',
+    stack: ['React, Strapi, GraphQL, Docker.'],
+    repo: 'https://github.com/Jood80/strapi-blog'
+  },
   {
     id: 'tesla-calc-range',
     title: 'Tesla Calc Range',
     thumbnail: tesla
   },
-  { id: 'clothing', title: 'clothing app', thumbnail: crwn },
+  {
+    id: 'clothing',
+    title: 'Clothing App',
+    thumbnail: crwn,
+    date: 'AUG-2020',
+    description: 'A store that is provided with some features, such as:',
+    list: [
+      'Signup, Signin using email & password.',
+      'Preview each collection products. ',
+      'Select your products to be added to the cart.',
+      'Upcoming feature: add Stripe as payment method.'
+    ],
+    stack: ['React, Firebase.'],
+    repo: 'https://github.com/Jood80/crwn-clothing',
+    displayImage: '/images/works/ecm.gif'
+  },
   {
     id: 'react-quiz',
     title: 'Quiz',
-    thumbnail: quiz
+    thumbnail: quiz,
+    date: 'JAN-2020',
+    description:
+      'You&apos;ll be tested with multiple-choice questions in the computer science field, the difficulty level of each question will be randomized.',
+    stack: ['React, Typescript'],
+    repo: 'https://github.com/Jood80/Quiz-app',
+    website: 'https://comp-quiz.netlify.app/'
   },
   {
     id: 'unsplash-serverless',
     title: 'Serverless pic',
     thumbnail: cloudflare
   },
-  { id: 'kittens', title: 'Kittens Rolodex', thumbnail: kittens },
+  {
+    id: 'kittens',
+    title: 'Kittens Rolodex',
+    thumbnail: kittens,
+    date: 'AUG-2020',
+    description:
+      'One of the early stage learning projects, the site can display you bunch of weird kittens -who seem to be innocent- as animated cards.',
+    stack: ['React, Axios'],
+    repo: 'https://github.com/Jood80/kittens-rolodex',
+    website: 'https://kittens-rolodex.vercel.app/',
+    displayWebsite: 'kittens-rolodex.vercel.app/'
+  },
   {
     id: 'node-graphql-boilerplate',
     title: 'Node GraphQL',
     thumbnail: boilerplate
   },
   { id: 'recipes', title: 'Food recipes', thumbnail: recipes },
-  { id: 'spaceX', title: 'SpaceX Launch', thumbnail: space }
+  { id: 'spaceX', title: 'SpaceX Launch', thumbnail: space },
+  {
+    id: 'mytindy',
+    title: 'MyTindy',
+    thumbnail: myTindyLogo,
+    repo: 'https://github.com/MyTindy/mytindy-app'
+  }
 ]
 
 export const collaborations = [
