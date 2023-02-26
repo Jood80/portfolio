@@ -5,17 +5,46 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import {
-  HeroSection,
-  BioTimeline,
-  Hoppies,
-  ContantInfo
-} from '../components/landing-page'
-// import { FindME } from '../components/find-me'
+import dynamic from 'next/dynamic'
+
+import Loader from '/components/loader'
+
+const DynamicLayout = dynamic(() => import('../components/layouts/article'), {
+  ssr: false,
+  loading: () => <Loader />
+})
+
+const DynamicHero = dynamic(
+  () => import('../components/landing-page/hero.js'),
+  {
+    ssr: false,
+    loading: () => <Loader />
+  }
+)
+const DynamicBioTimeline = dynamic(
+  () => import('../components/landing-page/bio'),
+  {
+    ssr: false,
+    loading: () => <Loader />
+  }
+)
+const DynamicHoppies = dynamic(
+  () => import('../components/landing-page/interests'),
+  {
+    ssr: false,
+    loading: () => <Loader />
+  }
+)
+const DynamicContantInfo = dynamic(
+  () => import('../components/landing-page/contacts'),
+  {
+    ssr: false,
+    loading: () => <Loader />
+  }
+)
 
 const LandingPage = () => (
-  <Layout>
+  <DynamicLayout>
     <Container>
       <Box
         borderRadius="lg"
@@ -24,7 +53,6 @@ const LandingPage = () => (
         mb={6}
         align="center"
       >
-        {' '}
         &quot;You don&apos;t stop when it&apos;s done, you stop when it&apos;s
         right.&quot; Uncle Bob
       </Box>
@@ -51,20 +79,20 @@ const LandingPage = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/jood.jpeg"
+            src="/images/cube.jpg"
             width={20}
             height={20}
-            alt="my avatar"
+            objectFit="contain"
+            alt="avatar"
           />
         </Box>
       </Box>
-      <HeroSection delay={0.1} />
-      <BioTimeline delay={0.2} />
-      <Hoppies delay={0.3} />
-      <ContantInfo delay={0.4} />
-      {/* <FindME delay={0.5} /> */}
+      <DynamicHero delay={0.1} />
+      <DynamicBioTimeline delay={0.2} />
+      <DynamicHoppies delay={0.3} />
+      <DynamicContantInfo delay={0.4} />
     </Container>
-  </Layout>
+  </DynamicLayout>
 )
 
 export default LandingPage
