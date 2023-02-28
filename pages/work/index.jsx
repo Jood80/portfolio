@@ -13,11 +13,6 @@ import {
 import ccp from '/public/images/ccp.png'
 import myTindyLogo from '/public/images/works/mytindy.png'
 import { collaborations, personalProjects } from '/constants'
-// import dynamic from 'next/dynamic'
-
-// const DynamicGridItem = dynamic(() => import('../components/grid-item'), {
-//   ssr: false,
-// })
 
 const Work = () => {
   return (

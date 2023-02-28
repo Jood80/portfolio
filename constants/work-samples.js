@@ -66,8 +66,14 @@ export const personalProjects = [
   },
   {
     id: 'tesla-calc-range',
-    title: 'Tesla Calc Range',
-    thumbnail: tesla
+    title: 'Tesla Calculator Range',
+    thumbnail: tesla,
+    date: 'JUL-2022',
+    description:
+      'For Tesla users or you Ms/Mr reader who may/may not want to buy one in the future. Here is a calculator that can check Tesla’s battery range for you, based on number of factors: temperature, the car&apos;s speed and its wheels size.',
+    stack: ['React, Redux'],
+    repo: 'https://github.com/Jood80/tesla-range-calculator',
+    website: 'https://tesla-range-calc.surge.sh/'
   },
   {
     id: 'clothing',
@@ -98,8 +104,13 @@ export const personalProjects = [
   },
   {
     id: 'unsplash-serverless',
-    title: 'Serverless pic',
-    thumbnail: cloudflare
+    title: 'Picture Viewer ',
+    thumbnail: cloudflare,
+    description:
+      'Serverless cloudflare workers has been used to fetch the users some pictures based on their search input.',
+    stack: ['React, Express, cloudflare.'],
+    repo: 'https://github.com/Jood80/cloudflare-serverless/',
+    websites: 'https://2be32bf9.cloudflare-serverless-6qh.pages.dev/'
   },
   {
     id: 'kittens',
@@ -115,17 +126,15 @@ export const personalProjects = [
   },
   {
     id: 'node-graphql-boilerplate',
-    title: 'Node GraphQL',
-    thumbnail: boilerplate
+    title: 'Node-GQL Boilerplate',
+    date: 'MAY-2021',
+    thumbnail: boilerplate,
+    stack: ['Node.js, GraphQl-Yoga, TS, TypeORM, Argon2, Docker'],
+    repo: 'https://github.com/Jood80/node-ts-graphQl-boilerplate',
+    displayRepo: 'node-ts-graphQl-boilerplate'
   },
   { id: 'recipes', title: 'Food recipes', thumbnail: recipes },
-  { id: 'spaceX', title: 'SpaceX Launch', thumbnail: space },
-  {
-    id: 'mytindy',
-    title: 'MyTindy',
-    thumbnail: myTindyLogo,
-    repo: 'https://github.com/MyTindy/mytindy-app'
-  }
+  { id: 'spaceX', title: 'SpaceX Launch', thumbnail: space }
 ]
 
 export const collaborations = [

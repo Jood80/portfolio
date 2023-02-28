@@ -1,3 +1,4 @@
+import React from 'react'
 import { useRouter } from 'next/router'
 UnorderedList
 import {
@@ -40,29 +41,30 @@ export default function Work() {
             </Title>
             <DynamicParagraph>{content.description}</DynamicParagraph>
             {content.list &&
-              content.list.map((item, i) => (
-                <UnorderedList key={i} ml={8}>
-                  <ListItem>{item}</ListItem>
-                </UnorderedList>
-              ))}
+              React.Children.toArray(
+                content.list.map(item => (
+                  <UnorderedList ml={8}>
+                    <ListItem>{item}</ListItem>
+                  </UnorderedList>
+                ))
+              )}
             <List my={4}>
               <ListItem>
-                <ListItem>
-                  <Meta>Stack</Meta>
-                  <span>{content.stack[0]}</span>
-                  <ListItem ml={14}>{content.stack[1]}</ListItem>
-                </ListItem>
-
-                <Meta>Code</Meta>
-                <Link
-                  href={content.repo}
-                  target="
-          _blank"
-                >
-                  {content.repo}
-                  <ExternalLinkIcon mx="2px" />
-                </Link>
+                <Meta>Stack</Meta>
+                <span>{content.stack[0]}</span>
+                <ListItem ml={14}>{content.stack[1]}</ListItem>
               </ListItem>
+
+              <Meta>Code</Meta>
+              <Link
+                href={content.repo}
+                target="
+          _blank"
+              >
+                {content.displayRepo ?? content.repo}
+                <ExternalLinkIcon mx="2px" />
+              </Link>
+
               {content.website && (
                 <ListItem>
                   <Meta>Website</Meta>

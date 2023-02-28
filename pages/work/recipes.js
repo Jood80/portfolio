@@ -47,7 +47,7 @@ const Work = () => (
           src="/images/works/recipes.png"
           alt="ca"
           boxSize="500px"
-          objectFit="contain"
+          objectFit="auto-contain"
         />
       </SimpleGrid>
     </Container>

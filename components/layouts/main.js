@@ -10,8 +10,7 @@ const LazyDog = dynamic(() => import('../voxel-dog'), {
   loading: () => <Loader />
 })
 
-// const withLazyDogPages = new Set(['/', '/work', '/404'])
-const withoutdog = new Set(['/cv'])
+const withoutdog = new Set(['/resume'])
 
 const Main = ({ children, router }) => {
   return (

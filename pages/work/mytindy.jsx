@@ -91,6 +91,7 @@ const Work = () => (
               width="100%"
               height="100%"
               allowFullScreen
+              loading="lazy"
               style={{
                 border: 0,
                 width: '100%',
@@ -121,8 +122,3 @@ export const WorkStyle = () => (
 )
 
 export default Work
-
-{
-  /* <iframe src="https://player.vimeo.com/video/794086458?h=815af600e9" width="640" height="1371" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/794086458">MyTindy Demo</a> from <a href="https://vimeo.com/user164857291">Nujud K.</a> on <a href="https://vimeo.com">Vimeo</a>.</p> */
-}
