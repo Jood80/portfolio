@@ -21,7 +21,7 @@ const BioTimeline = ({ delay }) => (
       Bio
     </Heading>
 
-    {timeline.map(slot => (
+    {timeline.reverse().map(slot => (
       <BioSection key={slot.id}>
         <BioYear>{slot.year}</BioYear>
         {slot.action}

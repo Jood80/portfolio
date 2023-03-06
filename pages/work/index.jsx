@@ -19,8 +19,33 @@ const Work = () => {
     <Layout title="work">
       <Container maxW="container.md">
         <Heading as="h3" fontSize={20} mb={4} ml={4}>
-          Work
+          Collaborations
         </Heading>
+        <Section delay={0.3}>
+          <SimpleGrid columns={[1, 1, 3]} gap={2}>
+            {collaborations.map(({ href, title, thumbnail, description }) => {
+              return (
+                <GridItem
+                  key={href}
+                  href={href}
+                  title={title}
+                  thumbnail={thumbnail}
+                >
+                  {description}
+                </GridItem>
+              )
+            })}
+
+            <MyTindyGrid id="mytindy" thumbnail={myTindyLogo} title="MyTindy" />
+          </SimpleGrid>
+        </Section>
+
+        <Section delay={0.2}>
+          <Divider my={6} />
+          <Heading as="h3" fontSize={20} mb={4} ml={4} mt={4}>
+            Personal Projects
+          </Heading>
+        </Section>
 
         <SimpleGrid columns={[1, 1, 3]} gap={1}>
           {React.Children.toArray(
@@ -43,36 +68,6 @@ const Work = () => {
             ))
           )}
         </SimpleGrid>
-
-        <Section delay={0.2}>
-          <Divider my={6} />
-          <Heading as="h3" fontSize={20} mb={4} ml={6}>
-            Collaborations
-          </Heading>
-        </Section>
-
-        <Section delay={0.3}>
-          <SimpleGrid columns={[1, 1, 3]} gap={2}>
-            {collaborations.map(({ href, title, thumbnail, description }) => {
-              return (
-                <GridItem
-                  key={href}
-                  href={href}
-                  title={title}
-                  thumbnail={thumbnail}
-                >
-                  {description}
-                </GridItem>
-              )
-            })}
-
-            <MyTindyGrid
-              id="mytindy"
-              thumbnail={myTindyLogo}
-              title="MyTindy"
-            ></MyTindyGrid>
-          </SimpleGrid>
-        </Section>
 
         <Section delay={0.4}>
           <Divider my={6} />

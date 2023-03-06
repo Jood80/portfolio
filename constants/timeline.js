@@ -1,5 +1,4 @@
 export const timeline = [
-  { id: 1, year: 1995, action: 'Born in Hebron - Palestine. Moved to Jordan' },
   {
     id: 2,
     year: 2016,

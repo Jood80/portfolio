@@ -56,11 +56,7 @@ export default function Work() {
               </ListItem>
 
               <Meta>Code</Meta>
-              <Link
-                href={content.repo}
-                target="
-          _blank"
-              >
+              <Link href={content.repo} target="_blank">
                 {content.displayRepo ?? content.repo}
                 <ExternalLinkIcon mx="2px" />
               </Link>
@@ -68,7 +64,7 @@ export default function Work() {
               {content.website && (
                 <ListItem>
                   <Meta>Website</Meta>
-                  <Link href={content.website}>
+                  <Link href={content.website} target="_blank">
                     {content.displayWebsite ?? content.website}
                     <ExternalLinkIcon mx="2px" />
                   </Link>
