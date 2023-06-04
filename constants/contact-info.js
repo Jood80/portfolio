@@ -18,11 +18,6 @@ export const socialMedia = [
     icon: IoLogoGithub
   },
   {
-    name: 'Discord',
-    link: 'https://discord.gg/user/Nujood#5153',
-    icon: IoLogoDiscord
-  },
-  {
     name: 'StackOverflow',
     link: 'https://stackoverflow.com/users/15107393/jood80?tab=profile',
     icon: IoLogoStackoverflow
