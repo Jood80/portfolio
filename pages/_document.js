@@ -7,10 +7,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <meta
-            name="nujood_kadhem"
-            content="This is the portfolio of Nujood Kadhem"
-          />
+          <meta name="portfolio" content="This is a portfolio" />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />

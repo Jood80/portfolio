@@ -26,10 +26,7 @@ const Layout = ({ children, title }) => (
       {title && (
         <Head>
           <title>{title} - Nujood</title>
-          <meta
-            name="Nujood_Kadhem"
-            content="This is the portfolio of Nujood Kadhem"
-          ></meta>
+          <meta name="portfolio" content="This is a portfolio"></meta>
         </Head>
       )}
       {children}
